@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Orbitron:wght@500&display=swap');
+* {
+    margin: 0;
+    padding:0;
+}
+
+body {
+
+    font-family: 'Orbitron', sans-serif;
+    background-color: #000000;
+    color: #5FD068;
+    
+    
+}
+
+img {
+    width: 10%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+
+}
+
+header {
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+.text-style {
+    color: #ffffff;
+}
+
+.advice {
+    margin-top: 1%;
+    margin-left: 20%;
+    color: #A5BECC;
+}
+
+
+#password-btn {
+    
+    padding: 1% 2%;
+    margin: 2% 20%;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    border: none;
+    background-color: #5FD068;
+    color: #ffffff;
+
+}
+
+#password-btn:hover{
+    opacity: 0.8;
+}
+
+#presentator {
+    margin: 2% auto 5%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 900px;
+}
+
+#area-a, #area-b, #area-c, #area-d {
+    background-color: #363062;
+    margin: 1%;
+    min-width: 400px;
+    height: 100px;
+    text-align: center;
+}
