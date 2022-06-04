@@ -8,23 +8,26 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <img src="./image/star.gif">
+    <img src="./image/star.gif" alt="blinking star">
     <header>
         <h1><span class="text-style">Generate a</span></h1>
         <h1>random password:</h1>
     </header>
     
         
-        <p class="advice">Never use an insecure password again.</p>
-        <button id="password-btn">Generate passwords</button>
+        <p class="advice">NEVER USE AN INSECCURE PASSWORD AGAIN!</p>
+        <input type="range" min="8" max="16" value="50" class="slider" id="myRange-el" onchange="setValue()">
+        <button id="generatePassword-el" onclick="generatePassword()">Click</button>
+        <p id="sliderValue-el">NUMBER OF CHARACTERS (MIN: 8 CHARS): 16 </p>
       
         <section id="presentator">
-            <div id="area-a"></div>
-            <div id="area-b"></div>
-            <div id="area-c"></div>
-            <div id="area-d"></div>
+            <div id="area-a" onclick="copy('a')">Password: 1</div>
+            <div id="area-b" onclick="copy('b')">Password: 2</div>
+            <div id="area-c" onclick="copy('c')">Password: 3</div>
+            <div id="area-d" onclick="copy('d')">Password: 4</div>
         </section>
-       
+       <p id="copy-password">( Click the password to copy to clipboar )</p>
     <script src="index.js"></script>
 </body>
 </html>
+
